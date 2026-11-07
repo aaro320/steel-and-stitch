@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
-  ArrowLeftRight, BarChart3, ClipboardList, Hammer, LayoutDashboard, LogOut, Package,
+  ArrowLeftRight, BarChart3, ClipboardList, LayoutDashboard, LogOut, Package,
   ScrollText, Settings, Tags, Truck, Users,
 } from 'lucide-react';
 import { logoutAction } from '@/app/actions';
@@ -34,10 +34,12 @@ export default function Sidebar({ role, name, full }: { role: 'owner' | 'admin' 
   return (
     <aside className="sticky top-0 flex h-screen w-16 shrink-0 flex-col bg-zinc-900 text-zinc-300 lg:w-64">
       <div className="flex items-center gap-3 px-4 py-5 text-white">
-        <div className="rounded-lg bg-amber-500 p-2 text-zinc-950"><Hammer size={20} /></div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/logo.png" alt="Tatak Budz logo"
+          className="h-10 w-10 shrink-0 rounded-full bg-white object-contain" />
         <div className="hidden leading-tight lg:block">
-          <div className="text-sm font-extrabold">Upholstery &amp; Steel</div>
-          <div className="text-xs text-zinc-400">Works</div>
+          <div className="text-base font-extrabold">Tatak Budz</div>
+          <div className="text-xs text-amber-400">Upholstery Works</div>
         </div>
       </div>
 
