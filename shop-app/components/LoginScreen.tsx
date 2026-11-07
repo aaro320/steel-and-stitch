@@ -27,7 +27,7 @@ export default function LoginScreen({ profiles, error }: { profiles: P[]; error?
         <div className="mb-10 flex items-center gap-4 text-white">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <div className="h-24 w-24 shrink-0 overflow-hidden rounded-full bg-white ring-4 ring-amber-500">
-            <img src="/logo.png" alt="Tatak Budz Upholstery Works logo"
+            <img src="/icon.png" alt="Tatak Budz Upholstery Works icon"
               className="h-full w-full scale-[1.22] object-cover" />
           </div>
           <div>
