@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Delete, Hammer, KeyRound } from 'lucide-react';
+import { Delete, KeyRound } from 'lucide-react';
 import { getQuestionAction, loginAction, resetPinAction } from '@/app/actions';
 import { Modal, Notice, RoleBadge } from './ui';
 import type { Role } from '@/lib/session';
@@ -25,9 +25,12 @@ export default function LoginScreen({ profiles, error }: { profiles: P[]; error?
     <div className="min-h-screen bg-zinc-900">
       <div className="mx-auto max-w-5xl px-6 py-14">
         <div className="mb-10 flex items-center gap-4 text-white">
-          <div className="rounded-xl bg-amber-500 p-3 text-zinc-950"><Hammer size={30} /></div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.png" alt="Tatak Budz Upholstery Works logo"
+            className="h-24 w-24 shrink-0 rounded-full bg-white object-contain p-1 ring-4 ring-amber-500" />
           <div>
-            <h1 className="text-3xl font-extrabold tracking-tight">Upholstery &amp; Steel Works</h1>
+            <h1 className="text-3xl font-extrabold tracking-tight">Tatak Budz</h1>
+            <p className="text-lg font-semibold text-amber-400">Upholstery Works</p>
             <p className="text-zinc-400">Inventory &amp; Job Order Management — choose your profile</p>
           </div>
         </div>
