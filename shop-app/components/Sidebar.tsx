@@ -36,7 +36,7 @@ export default function Sidebar({ role, name, full }: { role: 'owner' | 'admin' 
       <div className="flex items-center gap-3 px-4 py-5 text-white">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <div className="h-10 w-10 shrink-0 overflow-hidden rounded-full bg-white">
-          <img src="/logo.png" alt="Tatak Budz logo" className="h-full w-full scale-[1.22] object-cover" />
+          <img src="/icon.png" alt="Tatak Budz logo" className="h-full w-full scale-[1.22] object-cover" />
         </div>
         <div className="hidden leading-tight lg:block">
           <div className="text-base font-extrabold">Tatak Budz</div>
